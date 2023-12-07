@@ -22,7 +22,6 @@ if (!firebase.apps.length) {
 }
 const auth = firebase.auth();
 const firestore = firebase.firestore();
-// const analytics = firebase.analytics();
 
 
 function App() {
@@ -71,7 +70,7 @@ function SignIn() {
       <button className="sign-in" onClick={signInWithGoogle} disabled={isSigningIn}>
         Sign in with Google
       </button>
-      <p>Do not violate the community guidelines or you will be banned for life!</p>
+      <p> Be Nice :) </p>
     </>
   )
 }
