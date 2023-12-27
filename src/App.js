@@ -47,7 +47,7 @@ function SignIn() {
   const [isSigningIn, setIsSigningIn] = useState(false);
 
   const signInWithGoogle = () => {
-    if (isSigningIn) return; // Prevent multiple sign-in attempts
+    if (isSigningIn) return;
 
     setIsSigningIn(true);
     const provider = new firebase.auth.GoogleAuthProvider();
