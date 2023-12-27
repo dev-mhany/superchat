@@ -1,6 +1,6 @@
 body {
-  background-color: #282c34;
-}
+  background-color: #f0f2f5; /* Light gray background similar to Facebook */
+  font-family: Arial, sans-serif; /* Use a common font */}
 
 .App {
   text-align: center;
@@ -9,7 +9,8 @@ body {
 }
 
 .App header {
-  background-color: #181717;
+  background-color: #1877f2; /* Facebook blue */
+  color: white;
   height: 10vh;
   min-height: 50px;
   color: white;
@@ -30,7 +31,7 @@ body {
   flex-direction: column;
   justify-content: center;
   min-height: 100vh;
-  background-color: rgb(40, 37, 53);
+  background-color: #f0f2f5; /* Light gray background similar to Facebook */
 }
 
 main {
@@ -40,6 +41,7 @@ main {
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
+  background-color: white; /* White background for the main content area */
 }
 
 main::-webkit-scrollbar {
@@ -58,16 +60,21 @@ form {
   height: 10vh;
   position: fixed;
   bottom: 0;
-  background-color: rgb(24, 23, 23);
+  background-color: #f0f2f5; /* Light gray background for the form */
   width: 100%;
   max-width: 728px;
   display: flex;
   font-size: 1.5rem;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+
 }
 
 form button {
   width: 20%;
-  background-color: rgb(56, 56, 143);
+  background-color: #1877f2; /* Facebook blue for the button */
+  color: white;
+  border: none;
+  border-radius: 5px;
 }
 
 
@@ -75,11 +82,12 @@ input {
   line-height: 1.5;
   width: 100%;
   font-size: 1.5rem;
-  background: rgb(58, 58, 58);
-  color: white;
+  background: white; /* White background for input */
+  color: #1d2129; /* Dark text color similar to Facebook */
+  border: 1px solid #ccc; /* Add a border to the input */
+  border-radius: 5px; /* Add rounded corners to the input */
+  padding: 10px;
   outline: none;
-  border: none;
-  padding: 0 10px;
 }
 
 button {
@@ -107,7 +115,11 @@ button:disabled {
   margin: 0 auto;
 }
 
-
+.sign-out {
+  color: #282c34;
+  background: white;
+  max-width: 400px;
+}
 
 
 ul, li {
@@ -116,14 +128,14 @@ ul, li {
 }
 
 p {
-  max-width: 500px;
+  max-width: 70%; /* Limit message width */
   margin-bottom: 12px;
-  line-height: 24px;
-  padding: 10px 20px;
-  border-radius: 25px;
+  padding: 10px;
+  border-radius: 10px;
   position: relative;
-  color: white;
-  text-align: center;
+  color: #1d2129; /* Dark text color similar to Facebook */
+  background-color: #f0f2f5; /* Light gray background similar to Facebook */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
 
 .message {
@@ -138,12 +150,12 @@ p {
 
 .sent p {
   color: white;
-  background: #0b93f6;
+  background-color: #1877f2; /* Facebook blue for sent messages */
   align-self: flex-end;
 }
 .received p {
-  background: #e5e5ea;
-  color: black;
+  background-color: white; /* White background for received messages */
+  color: #1d2129; /* Dark text color similar to Facebook */
 }
 
 img {
